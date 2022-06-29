@@ -1,10 +1,10 @@
 
 
 
-local url = "https://raw.githubusercontent.com/zy1457/galaxy-hub/main/games"
+local url = "https://github.com/Wolfyz152007/galaxy-hub/tree/main/games"
 
 local games = ({ 
-    [155615604] = "Prison Life"
+    [4639625707] = "Oil Warfare Tycoon"
 })
 
 for i,v in next, games do
