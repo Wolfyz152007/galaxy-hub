@@ -1,0 +1,183 @@
+local ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/UI-Libraries/main/Vynixius%20UI%20Library/Source.lua"))()
+
+local windowSettings = {
+    toggled = true,
+    key = Enum.KeyCode.RightShift,
+    theme = nil,
+    title = {"Galaxy Hub", "Oil Warefare Tycoon"};
+}
+
+local window = ui:AddWindow(windowSettings);
+
+local myTab = window:AddTab("Misc");
+
+local mySection = myTab:AddSection("Teleports");
+local myTextlabel = mySection:AddLabel("Main Teleports", {alignment = Enum.TextXAlignment.Center});
+local myButton = mySection:AddButton("Capture Flag",function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(54.659584, 46.4903984, -78.4000702, -0.289307326, -0.141220957, 0.946761847, -0.17061758, 0.980827451, 0.0941656828, -0.941908121, -0.134291336, -0.307855427)
+    end)
+
+local myButton = mySection:AddButton("Flag Top Building",function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-11.3060913, 115.159943, -80.5879288, -0.256385237, 0.279112905, -0.925398707, 5.22581249e-05, 0.957404077, 0.288751572, 0.966574907, 0.0739833117, -0.245478824)
+    end)
+
+local myButton = mySection:AddButton("Oil 1", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-224.555756, 43.8045692, 193.599976, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+    end)
+
+local myButton = mySection:AddButton("Oil 2", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(407.081421, 43.7250023, -384.400055, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+    end)
+
+local myTextlabel = mySection:AddLabel("Base Teleports", {alignment = Enum.TextXAlignment.Center});
+local myButton = mySection:AddButton("Bravo",function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1039.99792, 64.4950027, -350.003296, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+    end)
+
+local myButton = mySection:AddButton("Delta",function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-349.998596, 64.4953995, -969.00061, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+    end)
+
+local myButton = mySection:AddButton("Lima",function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1171.99695, 64.4950027, 349.997131, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+    end)
+
+local myButton = mySection:AddButton("Victor",function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-350.000305, 64.4950027, 1076.99792, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+    end)
+
+local myButton = mySection:AddButton("Alpha",function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1008.99792, 64.4950027, 349.993713, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+    end)
+
+local myButton = mySection:AddButton("Echo",function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(349.999573, 64.4950027, -1013.00085, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+    end)
+
+local myButton = mySection:AddButton("Foxtrot",function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(979.286743, 64.4950027, -979.291321, 0.707134247, -0, -0.707079291, 0, 1, -0, 0.707079291, 0, 0.707134247)
+    end)
+
+local myButton = mySection:AddButton("Zulu",function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-970.094177, 64.4950027, 970.090332, -0.707134247, 0, 0.707079291, 0, 1, 0, -0.707079291, 0, -0.707134247)
+    end)
+
+local myButton = mySection:AddButton("Charlie",function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-924.840759, 64.4950027, -924.845337, 0.707134247, 0, 0.707079291, 0, 1, 0, -0.707079291, 0, 0.707134247)
+    end)
+
+local myButton = mySection:AddButton("Omega",function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1029.49316, 64.4950027, 1029.49146, -0.707134247, 0, -0.707079291, 0, 1, 0, 0.707079291, 0, -0.707134247)
+    end)
+
+local myButton = mySection:AddButton("Kilo",function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1171.99695, 64.4950027, -350.387054, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+    end)
+
+local mySection = myTab:AddSection("Gun Mods");
+local myTextlabel = mySection:AddLabel("Note not all guns are here", {alignment = Enum.TextXAlignment.Center});
+local myTextlabel = mySection:AddLabel("Weapon must be in your inventory", {alignment = Enum.TextXAlignment.Center});
+local myTextlabel = mySection:AddLabel("Dont reload or have weapon in hand", {alignment = Enum.TextXAlignment.Center});
+local myButton = mySection:AddButton("M17",function()
+game:GetService("Players").LocalPlayer.Backpack.M17["ACS_Modulo"].Variaveis.Ammo.Value = 999
+    end)
+
+local myButton = mySection:AddButton("M4A1",function()
+game:GetService("Players").LocalPlayer.Backpack.M4A1["ACS_Modulo"].Variaveis.Ammo.Value = 999
+    end)
+
+local myButton = mySection:AddButton("AK47",function()
+game:GetService("Players").LocalPlayer.Backpack.AK47["ACS_Modulo"].Variaveis.Ammo.Value = 999
+    end)
+
+local myButton = mySection:AddButton("MP9",function()
+game:GetService("Players").LocalPlayer.Backpack.MP9["ACS_Modulo"].Variaveis.Ammo.Value = 999
+    end)
+
+local myButton = mySection:AddButton("UMP45",function()
+game:GetService("Players").LocalPlayer.Backpack.UMP45["ACS_Modulo"].Variaveis.Ammo.Value = 999
+    end)
+
+local myButton = mySection:AddButton("M40 Sniper",function()
+game:GetService("Players").LocalPlayer.Backpack["M40 Sniper"]["ACS_Modulo"].Variaveis.Ammo.Value = 999
+    end)
+
+local myButton = mySection:AddButton("Micro UZI",function()
+game:GetService("Players").LocalPlayer.Backpack["Micro UZI"]["ACS_Modulo"].Variaveis.Ammo.Value = 999
+    end)
+
+local myButton = mySection:AddButton("Mac-10",function()
+game:GetService("Players").LocalPlayer.Backpack["Suppressed Mac-10"]["ACS_Modulo"].Variaveis.Ammo.Value = 999
+    end)
+
+local myButton = mySection:AddButton("SPAS-12 Shotgun",function()
+game:GetService("Players").LocalPlayer.Backpack["SPAS-12 Shotgun"]["ACS_Modulo"].Variaveis.Ammo.Value = 999
+    end)
+
+local myButton = mySection:AddButton("SA80 LSW",function()
+game:GetService("Players").LocalPlayer.Backpack["SA80 LSW"]["ACS_Modulo"].Variaveis.Ammo.Value = 999
+    end)
+
+local myButton = mySection:AddButton("MK18 Rifle",function()
+game:GetService("Players").LocalPlayer.Backpack["MK18 Rifle"]["ACS_Modulo"].Variaveis.Ammo.Value = 999
+    end)
+
+local myButton = mySection:AddButton("SVD Sniper",function()
+game:GetService("Players").LocalPlayer.Backpack["SVD Sniper"]["ACS_Modulo"].Variaveis.Ammo.Value = 999
+    end)
+
+local myButton = mySection:AddButton("Remington 870",function()
+game:GetService("Players").LocalPlayer.Backpack["Remington 870"]["ACS_Modulo"].Variaveis.Ammo.Value = 999
+    end)
+
+local myButton = mySection:AddButton("SA80 Rifle",function()
+game:GetService("Players").LocalPlayer.Backpack["SA80 Rifle"]["ACS_Modulo"].Variaveis.Ammo.Value = 999
+    end)
+
+local myButton = mySection:AddButton("G36C RapidFire",function()
+game:GetService("Players").LocalPlayer.Backpack["G36C RapidFire"]["ACS_Modulo"].Variaveis.Ammo.Value = 999
+    end)
+
+local myButton = mySection:AddButton("M4A1 ACOG",function()
+game:GetService("Players").LocalPlayer.Backpack["M4A1 ACOG"]["ACS_Modulo"].Variaveis.Ammo.Value = 999
+    end)
+
+local myButton = mySection:AddButton("Suppressed Sniper",function()
+game:GetService("Players").LocalPlayer.Backpack["Suppressed Sniper"]["ACS_Modulo"].Variaveis.Ammo.Value = 999
+    end)
+
+local myButton = mySection:AddButton("MP5",function()
+game:GetService("Players").LocalPlayer.Backpack.MP5["ACS_Modulo"].Variaveis.Ammo.Value = 999
+    end)
+
+local myButton = mySection:AddButton("G3 Rifle",function()
+game:GetService("Players").LocalPlayer.Backpack["G3 Rifle"]["ACS_Modulo"].Variaveis.Ammo.Value = 999
+    end)
+
+local myButton = mySection:AddButton("Modded MK18",function()
+game:GetService("Players").LocalPlayer.Backpack["Modded MK18"]["ACS_Modulo"].Variaveis.Ammo.Value = 999
+    end)
+
+local myButton = mySection:AddButton("GTE M4A1 ACOG",function()
+game:GetService("Players").LocalPlayer.Backpack["GTE M4A1 ACOG"]["ACS_Modulo"].Variaveis.Ammo.Value = 999
+    end)
+
+local myButton = mySection:AddButton("Desert Eagle",function()
+game:GetService("Players").LocalPlayer.Backpack["Desert Eagle"]["ACS_Modulo"].Variaveis.Ammo.Value = 999
+    end)
+
+local myButton = mySection:AddButton("AUG A3",function()
+game:GetService("Players").LocalPlayer.Backpack["AUG A3"]["ACS_Modulo"].Variaveis.Ammo.Value = 999
+    end)
+
+local myButton = mySection:AddButton("Suppressed IA2",function()
+game:GetService("Players").LocalPlayer.Backpack["Suppressed IA2"]["ACS_Modulo"].Variaveis.Ammo.Value = 999
+    end)
+
+local myButton = mySection:AddButton("M110 Rifle",function()
+game:GetService("Players").LocalPlayer.Backpack["M110 Rifle"]["ACS_Modulo"].Variaveis.Ammo.Value = 999
+    end)
+
+local myButton = mySection:AddButton("M27 IAR",function()
+game:GetService("Players").LocalPlayer.Backpack["M27 IAR"]["ACS_Modulo"].Variaveis.Ammo.Value = 999
+    end)
