@@ -181,3 +181,8 @@ game:GetService("Players").LocalPlayer.Backpack["M110 Rifle"]["ACS_Modulo"].Vari
 local myButton = mySection:AddButton("M27 IAR",function()
 game:GetService("Players").LocalPlayer.Backpack["M27 IAR"]["ACS_Modulo"].Variaveis.Ammo.Value = 999
     end)
+
+
+if game.PlaceId == 4639625707 then
+    oil_warfare_tycoon()
+end
